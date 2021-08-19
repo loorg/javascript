@@ -1,0 +1,181 @@
+
+задача 1
+
+<script>
+
+
+var a = 1, b = 1, c, d;
+c = ++a; alert(c);           // 2      в данном примере  к значению а идет прибавка на единицу  и оно и выводится ибо равен ++а равен 1+а
+d = b++; alert(d);           // 1     в данном значение  делается тоже самое, но выводится предыдущеи значение
+c = (2+ ++a); alert(c);      // 5      учитывая что предыдущие значение а было 2, то прибвляется как мы знаем таже единица и а =3 соответвенно при прибавке будет равено 5
+d = (2+ b++); alert(d);      // 4      здесь значение хоть и в предыдущем вариант было выведено 1, но стало значение 2, а в этом примере тоже прибавилось +1 но значение стало +3, но выводистя прошлое значение 2 по этому и 4
+alert(a);                    // 3      тут хитростей нет  вывелось все прибавление и выводится как и в следующем последние значение 3
+alert(b);                    // 3
+
+
+
+</script>
+
+
+
+
+
+
+задача 2
+<script>
+
+var a = 2;
+var x = 1 + (a *= 2);    -- данное значение маскирует выражение( для упрощения) и будет равнаятся а = а*2)
+
+значит полностью пример будет такоев х= 1+(а=а*2) значит от веть будет 5
+
+</script>
+
+
+
+
+
+
+задача 3
+
+<script>
+
+var a = 2;
+var b = 3;
+   if (a > 0 && b > 0){
+   x = a - b;
+   alert(x);
+   }
+   if (a < 0 && b >< 0){
+   x = a * b;
+   alert(x);
+   }
+      if (a > 0 && b < 0 || a < 0 && b > 0){
+   x = a + b;
+   alert(x);
+   }
+</script>
+
+
+
+
+
+задача 4
+
+<script>
+
+a = +prompt("введите число от 1 до 15");
+   switch (a) {
+    case 1:
+         alert('Ваше число 1');
+         break;
+    case 2:
+         alert('Ваше число 2');
+         break;
+    case 3:
+         alert('Ваше число 3');
+         break;
+    case 4:
+         alert('Ваше число 4');
+         break;
+    case 5:
+         alert('Ваше число 5');
+         break;
+    case 6:
+         alert('Ваше число 6');
+         break;        
+    case 7:
+         alert('Ваше число 7');
+         break;         
+    case 8:
+         alert('Ваше число 8');
+         break;   
+    case 9:
+         alert('Ваше число 9');
+         break
+    case 10:
+         alert('Ваше число 10');
+         break;
+    case 11:
+         alert('Ваше число 11');
+         break;
+    case 12:
+         alert('Ваше число 12');
+         break;
+    case 13:
+         alert('Ваше число 13');
+         break;        
+    case 14:
+         alert('Ваше число 14');
+         break;         
+    case 15:
+         alert('Ваше число 15');
+         break          
+   }      
+         
+</script>
+
+
+
+
+
+задача 5
+
+<script>
+var a = 8
+var b = 4
+
+function plus(a, b) {
+return a+b;
+
+}
+
+function minus(a, b) {
+return a-b;
+
+}
+
+function mult(a, b) {
+return a*b;
+
+}
+
+function div(a, b) {
+return a/b;
+
+}
+</script>
+
+
+
+
+
+
+
+задача 6
+
+<script>
+function mathOperation(arg1, arg2, operation){
+    switch(operation){
+         case 'сложение' :
+                 return arg1 + arg2;
+                 break;
+         case 'вычитание' :
+                 return arg1 - arg2;
+                 break;
+         case 'деление' :
+                 return arg1 / arg2;
+                 break;
+         case 'умножение' :
+                 return arg1 * arg2;
+                 break;                 
+                 
+
+    }
+
+}
+
+</script>
+
+
+
