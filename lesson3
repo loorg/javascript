@@ -1,0 +1,124 @@
+дз-3
+
+задача 1
+
+вывести  с помощью цикла  простые числа от 1 до 100
+
+<script>
+console.log('задание первое')
+let num = 0
+while (nums <= 100)  {
+   let check = true;
+   for ( let i = 2; 1< nums; i++){
+       if (nums%i === 0) {
+          check = false;
+          break;
+       }
+   }
+   if (check) console.log(nums);
+   nums++;
+
+}
+
+</script>
+
+
+
+
+
+
+задача 2
+
+задача с функционалом магазина 
+
+<script>
+console.log('второе здание')
+let basket = [
+    {
+       product: 'pen'
+       price: getNumber(50, 100)
+
+    },
+
+    {
+       product: 'pencil'
+       price: getNumber(50, 100)
+
+    },
+
+    {
+       product: 'file'
+       price: getNumber(50, 100)
+
+    },
+
+    {
+       product: 'paper'
+       price: getNumber(50, 100)
+
+    },
+
+
+];
+
+
+let basketPrice = 0;
+for ( let prod of basket){
+	basketPrice+=prod.price;
+	console.log(prod.product + 'стоит' +  prod.price);
+
+}
+console.log('Стоимость корзины' + basketPrice + 'руб');
+</script>
+
+
+
+
+
+
+задача 3
+
+Товар в корзине хранится в массиве.
+
+<script>
+console.log('Заданье третье');
+function countBasketPrice(backet) {
+	
+	let funBasketPrice =0;
+	for( let prod of backet){
+       funBasketPrice +=prod.price;
+
+	}
+	return funBasketPrice;
+}
+console.log('Стоимость корзины составляет'+ countBasketPrice(backet) + 'руб')
+
+</script>
+
+
+
+
+
+задача 4
+вывести с помощью цикла for  от 0 до 9
+
+<script>
+console.log('Задание четвертое');
+for (let i = 0; 1<10; console.log(i++)) {}
+
+</script>
+
+
+задача 5
+нарисовать пирамидку  с помощью console.log 20 рядов
+
+<script>
+console.log('Задание пятое');
+let row = 'x';
+for ( let i = 0; i < 20; i++){
+	console.log(row);
+	row += 'x';
+
+}
+
+</script>
